@@ -17,8 +17,13 @@
   under the License.
   --%>
 <%@page session="false" contentType="text/html; UTF-8"
-        import=""%>
-<%@include file="global.jsp"%>
-<body>
-  <h1>Hello World</h1>
-</body>
+        %>
+<%@taglib prefix="sling" uri="http://sling.apache.org/taglibs/sling/1.2" %>
+<!-- <sling:defineObjects/> -->
+<%
+%>
+<!DOCTYPE html>
+<html>
+    <sling:call script="head.jsp"/>
+    <sling:call script="body.jsp"/>
+</html>

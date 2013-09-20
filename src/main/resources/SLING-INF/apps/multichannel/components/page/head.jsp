@@ -16,14 +16,14 @@
   specific language governing permissions and limitations
   under the License.
   --%>
-<%@page session="false" contentType="text/html; UTF-8"
-        import=""%>
-<%@taglib prefix="sling" uri="http://sling.apache.org/taglibs/sling/1.2" %>
-<sling:defineObjects/>
-<%
-%>
-<!DOCTYPE html>
-<html>
-    <sling:call script="head.jsp"/>
-    <sling:call script="body.jsp"/>
-</html>
+<%@page session="false" contentType="text/html; UTF-8" %>
+<%@include file="global.jsp"%>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <title>MultiChannel Demo Page</title>
+    <link rel="stylesheet" type="text/css" href="/content/demo/css/style.css">
+    <script src="/content/demo/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <style>
+    </style>
+</head>

@@ -26,6 +26,6 @@ This project provides a demo bundle that shows how to build multichannel mobile-
 
         git clone https://github.com/savs/multichannel-demo.git
         cd multichannel-demo/
-        mvn -PautoInstallBundle clean install
+        mvn clean package sling:install
 
 * Go to http://localhost:8080/content/multichannel/index.html with various devices

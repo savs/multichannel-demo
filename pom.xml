@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one
   or more contributor license agreements.  See the NOTICE file
@@ -32,16 +32,30 @@
     <version>1.0-SNAPSHOT</version>
     <name>multichannel</name>
     <description>com.andrewsavory.adaptto.mobile - multichannel</description>
+
+    <properties>
+        <sling.java.version>6</sling.java.version>
+    </properties>
+
+    <scm>
+        <connection>scm:git:https://github.com/savs/multichannel-demo.git</connection>
+        <developerConnection>scm:git:git@github.com:savs/multichannel-demo.git</developerConnection>
+        <url>https://github.com/savs/multichannel-demo</url>
+    </scm>
+
+    <dependencies>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
                 <extensions>true</extensions>
-                <version>2.0.1</version>
                 <configuration>
                     <instructions>
-                        <Sling-Initial-Content>SLING-INF;overwrite:=true;uninstall:=true</Sling-Initial-Content>
+                        <Sling-Initial-Content>SLING-INF;ignoreImportProviders:=xml;overwrite:=true</Sling-Initial-Content>
+                        <!-- <Embed-Transitive>true</Embed-Transitive> -->
                     </instructions>
                 </configuration>
             </plugin>

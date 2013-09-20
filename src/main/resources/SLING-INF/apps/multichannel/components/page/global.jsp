@@ -16,16 +16,10 @@
   specific language governing permissions and limitations
   under the License.
   --%>
-<%@page session="false" contentType="text/html; UTF-8" %>
-<%@include file="global.jsp"%>
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width">
-    <title>MultiChannel Demo Page</title>
-    <link rel="stylesheet" type="text/css" href="/content/demo/css/style.css">
-    <style>
-        body {
-            color: #ffffff;
-        }
-    </style>
-</head>
+<%@page session="false" contentType="text/html; UTF-8"
+        %>
+<%@taglib prefix="sling" uri="http://sling.apache.org/taglibs/sling/1.2" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<sling:defineObjects />
+<%
+%>
