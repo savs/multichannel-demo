@@ -25,5 +25,24 @@
     <link rel="stylesheet" type="text/css" href="/content/demo/css/style.css">
     <script src="/content/demo/js/jquery-1.10.1.min.js" type="text/javascript"></script>
     <style>
+    .fs-img {
+        /* Low-res is the original source, which is the default */
+        /* Hi-res replaces the width in the URL; in this case, 'w320', with the new width */
+        font-family: 'image-set( url(w320|w{requestWidth}) 2x high-bandwidth )';
+        /* font-family: 'image-set( url({directory}{requestWidth}x{requestHeight}/{file}) 2x high-bandwidth'; */
+        display:none;
+      }
     </style>
+    <script>
+        foresight = {
+            options: {
+                //minKbpsForHighBandwidth: 800,
+                speedTestUri: "//www.andrewsavory.com/presentations/AdaptTo_2013_Slinging_Multichannel_Content_the_BrowserMap_Way/speed-test/200K.jpg",
+                speedTestKB: 50,
+                speedTestExpireMinutes: 1
+            }
+        };
+    </script>
+    <script src="/content/demo/js/foresight-debugger.js"></script>
+    <script src="/content/demo/js/foresight.min.js"></script>
 </head>

@@ -1,0 +1,26 @@
+Foresight.js credits
+====================
+
+Foresight.js is Copyright (c) 2012 Adam Bradley CDNConnect.com
+
+Licensed under the MIT license.
+
+https://github.com/adamdbradley/foresight.js
+
+Apache BrowserMap credits
+=========================
+
+Apache BrowserMap is Copyright The Apache Software Foundation.
+
+Licensed under the Apache License, Version 2.0
+
+http://incubator.apache.org/devicemap/
+
+devicemap-demo credits
+======================
+
+devicemap-demo by Radu Cotescu
+
+Licensed under the Apache License, Version 2.0
+
+https://github.com/raducotescu/devicemap-demo/
