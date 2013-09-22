@@ -23,7 +23,10 @@
     <meta name="viewport" content="width=device-width">
     <title>MultiChannel Demo Page</title>
     <link rel="stylesheet" type="text/css" href="/content/demo/css/style.css">
+
     <script src="/content/demo/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+    <!-- Foresight connection detection library -->
     <style>
     .fs-img {
         /* Low-res is the original source, which is the default */
@@ -45,4 +48,19 @@
     </script>
     <script src="/content/demo/js/foresight-debugger.js"></script>
     <script src="/content/demo/js/foresight.min.js"></script>
+
+    <!-- BrowserMap feature detection library and dependencies -->
+    <!-- FIXME generate these -->
+    <link rel="alternate" hreflang="en" data-bmap-devgroups="smartphone" href="index.smartphone.html" />
+    <link rel="alternate" hreflang="en" data-bmap-devgroups="tablet" href="index.tablet.html" />
+    <link rel="alternate" hreflang="en" data-bmap-devgroups="highResolutionDisplay" href="index.highResolutionDisplay.html" />
+    <link rel="alternate" hreflang="en" data-bmap-devgroups="browser" href="index.browser.html" />
+    <link rel="alternate" hreflang="en" data-bmap-devgroups="oldBrowser" href="index.oldBrowser.html" />
+
+    <script type="text/javascript" src="/content/demo/js/browsermap/bmaputil.js"></script>
+    <script type="text/javascript" src="/content/demo/js/browsermap/bmap.js"></script>
+    <script type="text/javascript" src="/content/demo/js/externals/modernizr/modernizr.custom.js"></script>
+    <script type="text/javascript" src="/content/demo/js/externals/matchMedia/matchMedia.js"></script>
+    <script type="text/javascript" src="/content/demo/js/browsermap/probes.js"></script>
+    <script type="text/javascript" src="/content/demo/js/browsermap/devicegroups.js"></script>
 </head>
