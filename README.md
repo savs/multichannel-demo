@@ -28,4 +28,4 @@ This project provides a demo bundle that shows how to build multichannel mobile-
         cd multichannel-demo/
         mvn clean package sling:install
 
-* Go to http://localhost:8080/content/multichannel/index.html with various devices
+* Go to http://localhost:8080/demo/index.html with various devices
