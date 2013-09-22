@@ -21,6 +21,17 @@
 <%@include file="global.jsp"%>
 <body>
   <h1>Hello World</h1>
+
+  <ul>
+  <%
+    String[] selectors = slingRequest.getRequestPathInfo().getSelectors();
+    for (int i = 0; i < selectors.length; i++) { %>
+      <li><%= selectors[i] %></li>
+    <%
+      }
+    %>
+  </ul>
+
   <img data-src="//demo.cdnconnect.com/images/hi-res/spacewalk.w320.jpg" data-width="320" data-height="212" class="fs-img">
   <noscript>
     <img src="//demo.cdnconnect.com/images/hi-res/spacewalk.w320.jpg">

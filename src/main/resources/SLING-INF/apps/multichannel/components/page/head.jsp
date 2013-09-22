@@ -38,7 +38,7 @@
             options: {
                 //minKbpsForHighBandwidth: 800,
                 speedTestUri: "//www.andrewsavory.com/presentations/AdaptTo_2013_Slinging_Multichannel_Content_the_BrowserMap_Way/speed-test/200K.jpg",
-                speedTestKB: 50,
+                speedTestKB: 200,
                 speedTestExpireMinutes: 1
             }
         };
