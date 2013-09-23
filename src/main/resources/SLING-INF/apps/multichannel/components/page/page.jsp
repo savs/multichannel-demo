@@ -16,7 +16,7 @@
   specific language governing permissions and limitations
   under the License.
   --%>
-<%@page session="false" contentType="text/html; UTF-8"
+<%@page session="false" contentType="text/html; UTF-8" import="java.util.Arrays"
         %>
 <%@taglib prefix="sling" uri="http://sling.apache.org/taglibs/sling/1.2" %>
 <!-- <sling:defineObjects/> -->
@@ -25,5 +25,22 @@
 <!DOCTYPE html>
 <html>
     <sling:call script="head.jsp"/>
-    <sling:call script="body.jsp"/>
+
+  <%
+    if(Arrays.asList(slingRequest.getRequestPathInfo().getSelectors()).contains("browser")) {
+  %>
+      <sling:call script="body.jsp"/>
+  <%
+    } else if (Arrays.asList(slingRequest.getRequestPathInfo().getSelectors()).contains("highResolutionDisplay")) {
+    %>
+      <sling:call script="body_mobile.jsp"/>
+    <%
+    } else {
+    %>
+    <p>No selector</p>
+    <!-- <sling:call script="body.jsp"/> -->
+    <%
+  }
+    %>
+    
 </html>
