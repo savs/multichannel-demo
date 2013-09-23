@@ -24,3 +24,8 @@ devicemap-demo by Radu Cotescu
 Licensed under the Apache License, Version 2.0
 
 https://github.com/raducotescu/devicemap-demo/
+
+Images
+======
+
+Leaf from http://www.flickr.com/photos/tiltti/2775573516/
