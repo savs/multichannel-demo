@@ -48,8 +48,13 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Sling-Initial-Content>SLING-INF;ignoreImportProviders:=xml;overwrite:=true</Sling-Initial-Content>
-                        <!-- <Embed-Transitive>true</Embed-Transitive> -->
+                        <Sling-Nodetypes>
+                            SLING-INF/nodetypes/nodetypes.cnd
+                        </Sling-Nodetypes>
+                        <Sling-Initial-Content>
+                            SLING-INF/apps;overwrite:=true;uninstall:=true;path:=/apps,
+                            SLING-INF/content;overwrite:=true;uninstall:=true;path:=/content
+                        </Sling-Initial-Content>
                     </instructions>
                 </configuration>
             </plugin>

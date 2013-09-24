@@ -16,8 +16,7 @@
   specific language governing permissions and limitations
   under the License.
   --%>
-<%@page session="false" contentType="text/html; UTF-8"
-        %>
+<%@page session="false" contentType="text/html; UTF-8" %>
 <%@include file="global.jsp"%>
 <body>
   <h1>Hello World</h1>
