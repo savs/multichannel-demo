@@ -50,12 +50,12 @@
     <script src="/content/demo/js/foresight.min.js"></script>
 
     <!-- BrowserMap feature detection library and dependencies -->
-<%
-final ValueMap attributes = ResourceUtil.getValueMap(resource);
-final String[] bmapDevGroups = attributes.get("data-bmap-devgroups", String[].class);
+    <%
+      final ValueMap attributes = ResourceUtil.getValueMap(resource);
+      final String[] bmapDevGroups = attributes.get("data-bmap-devgroups", String[].class);
 
-    for (String bmapDevGroup : bmapDevGroups) { %>
-      <link rel="alternate" hreflang="en" data-bmap-devgroups="<%= bmapDevGroup %>" href="index.<%= bmapDevGroup %>.html" />
+      for (String bmapDevGroup : bmapDevGroups) { %>
+    <link rel="alternate" hreflang="en" data-bmap-devgroups="<%= bmapDevGroup %>" href="index.<%= bmapDevGroup %>.html" />
     <%
       }
     %>
