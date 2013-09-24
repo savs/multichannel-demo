@@ -48,12 +48,9 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Sling-Nodetypes>
-                            SLING-INF/nodetypes/nodetypes.cnd
-                        </Sling-Nodetypes>
                         <Sling-Initial-Content>
-                            SLING-INF/scripts;overwrite:=true;uninstall:=true;path:=/apps/my/node,
-                            SLING-INF/content;overwrite:=true;uninstall:=true;path:=/content
+                            SLING-CONTENT/apps;overwrite:=true;uninstall:=true;path:=/apps/${artifactId},
+                            SLING-CONTENT/content;overwrite:=true;uninstall:=true;path:=/content
                         </Sling-Initial-Content>
                     </instructions>
                 </configuration>
@@ -77,7 +74,7 @@
                           <removeIncluded>true</removeIncluded>
                           <!-- insert new line after each concatenation (default: false) -->
                           <insertNewLine>true</insertNewLine>
-                          <output>${project.build.directory}/classes/SLING-INF/content/demo/js/all.js</output>
+                          <output>${project.build.directory}/classes/SLING-CONTENT/content/demo/js/all.js</output>
                           <!-- files to include, path relative to output's directory or absolute path-->
                           <!--inputDir>base directory for non absolute includes, default to parent dir of output</inputDir-->
                           <includes>

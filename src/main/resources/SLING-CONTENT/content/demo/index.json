@@ -1,0 +1,7 @@
+{
+    "jcr:primaryType" : "nt:unstructured",
+    "sling:resourceType" : "/apps/multichannel/components/page",
+    "jcr:title" : "Hello World",
+    "title" : "Hello World",
+    "description" : "This node is a demo node."
+}
