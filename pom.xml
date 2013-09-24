@@ -52,7 +52,7 @@
                             SLING-INF/nodetypes/nodetypes.cnd
                         </Sling-Nodetypes>
                         <Sling-Initial-Content>
-                            SLING-INF/apps;overwrite:=true;uninstall:=true;path:=/apps,
+                            SLING-INF/scripts;overwrite:=true;uninstall:=true;path:=/apps/my/node,
                             SLING-INF/content;overwrite:=true;uninstall:=true;path:=/content
                         </Sling-Initial-Content>
                     </instructions>
