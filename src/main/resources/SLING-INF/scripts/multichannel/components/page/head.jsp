@@ -16,7 +16,7 @@
   specific language governing permissions and limitations
   under the License.
   --%>
-<%@page session="false" contentType="text/html; UTF-8" %>
+<%@page session="false" contentType="text/html; UTF-8" %><%@page import="org.apache.sling.api.resource.ResourceUtil,org.apache.sling.api.resource.ValueMap,org.apache.sling.api.request.ResponseUtil"%>
 <%@include file="global.jsp"%>
 <head>
     <meta charset="utf-8"/>
@@ -50,12 +50,15 @@
     <script src="/content/demo/js/foresight.min.js"></script>
 
     <!-- BrowserMap feature detection library and dependencies -->
-    <!-- FIXME generate these -->
-    <link rel="alternate" hreflang="en" data-bmap-devgroups="smartphone" href="index.smartphone.html" />
-    <link rel="alternate" hreflang="en" data-bmap-devgroups="tablet" href="index.tablet.html" />
-    <link rel="alternate" hreflang="en" data-bmap-devgroups="highResolutionDisplay" href="index.highResolutionDisplay.html" />
-    <link rel="alternate" hreflang="en" data-bmap-devgroups="browser" href="index.browser.html" />
-    <link rel="alternate" hreflang="en" data-bmap-devgroups="oldBrowser" href="index.oldBrowser.html" />
+<%
+final ValueMap attributes = ResourceUtil.getValueMap(resource);
+final String[] bmapDevGroups = attributes.get("data-bmap-devgroups", String[].class);
+
+    for (String bmapDevGroup : bmapDevGroups) { %>
+      <link rel="alternate" hreflang="en" data-bmap-devgroups="<%= bmapDevGroup %>" href="index.<%= bmapDevGroup %>.html" />
+    <%
+      }
+    %>
 
     <script type="text/javascript" src="/content/demo/js/browsermap/bmaputil.js"></script>
     <script type="text/javascript" src="/content/demo/js/browsermap/bmap.js"></script>

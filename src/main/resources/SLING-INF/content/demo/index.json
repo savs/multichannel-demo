@@ -1,0 +1,8 @@
+{
+    "jcr:primaryType" : "my:node",
+    "sling:resourceType" : "/apps/my/node/multichannel/components/page",
+    "jcr:title" : "Hello World",
+    "data-bmap-devgroups" : ["oldBrowser", "highResolutionDisplay", "smartphone"],
+    "title" : "Hello World",
+    "description" : "This node is a demo node."
+}

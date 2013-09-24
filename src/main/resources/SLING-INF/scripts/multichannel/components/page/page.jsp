@@ -35,7 +35,7 @@
   <%
     } else if (Arrays.asList(slingRequest.getRequestPathInfo().getSelectors()).contains("highResolutionDisplay")) {
     %>
-      <sling:call script="body_mobile.jsp"/>
+      <sling:call script="body.jsp"/>
     <%
     } else {
       // do nothing ... body_browsermap should already be set
